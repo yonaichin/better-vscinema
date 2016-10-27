@@ -16,7 +16,7 @@ export const Navbar = (props) => {
       </div>
 
       <div className="nav-center">
-        <a className="nav-item" href="#">
+        <a className="nav-item" href="https://github.com/yonaichin/better-vscinema" target='_blank'>
           <span className="icon">
             <i className="fa fa-github"></i>
           </span>
