@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import MovieList from './components/MovieList';
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import MovieList from './components/MovieList'
 
 import { setView } from './redux/modules/view'
 
@@ -20,7 +20,7 @@ class App extends Component {
         </section>
         <MovieList />
       </div>
-    );
+    )
   }
 }
 const mapStateToProps = (state) => ({
@@ -29,4 +29,4 @@ const mapStateToProps = (state) => ({
 
 export default connect(mapStateToProps, {
   setView
-})(App);
+})(App)
