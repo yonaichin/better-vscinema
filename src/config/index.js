@@ -1,1 +1,1 @@
-export const API_HOST = 'http://vieshow-showtime.herokuapp.com'
+export const API_HOST = '//vieshow-showtime.herokuapp.com'
