@@ -9,10 +9,10 @@ Build with `React.js`, `reudx`, `ES6`, [Bulma](http://bulma.io/)
 
 ## How to run
 
-`
+```
 npm install -g create-react-app
 
 npm install
 
 npm start
-`
+```
