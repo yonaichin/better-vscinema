@@ -1,0 +1,17 @@
+.facebook_btn {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  color: inherit;
+  border: 0;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  outline:none;
+}
+.avatar {
+  margin-right: 5px;
+}
+.avatar-icon {
+  border-radius: 100%;
+}

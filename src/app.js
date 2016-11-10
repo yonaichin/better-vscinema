@@ -7,6 +7,7 @@ import TheaterList from './components/TheaterList'
 import LoadingSpinner from './components/LoadingSpinner'
 
 import { setView } from './redux/modules/view'
+import { setAuth } from './redux/modules/auth'
 import { actions as TheaterActions } from './redux/modules/theater'
 
 class App extends Component {
@@ -16,7 +17,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar auth={this.props.auth} setAuth={this.props.setAuth}/>
         {
           // show LoadingSpinner when requesting data
           this.props.theater.isFetching && <LoadingSpinner />
@@ -34,10 +35,12 @@ class App extends Component {
 }
 const mapStateToProps = (state) => ({
   view: state.view,
-  theater: state.theater
+  theater: state.theater,
+  auth: state.auth
 })
 
 export default connect(mapStateToProps, {
   setView,
+  setAuth,
   ...TheaterActions
 })(App)
