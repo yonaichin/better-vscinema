@@ -6,11 +6,11 @@ export const TheaterList = (props) => {
   if (!_.isEmpty(props.dataset)) {
     theaters = _.map(props.dataset, (d, idx) => {
       return (
-        <div className="box" key={idx}>
+        <div className="box is-unselectable" key={idx}>
           <article className="media">
             <div className="media-left">
               <figure className="image is-64x64 is-square">
-                <img src={d.thumbnail} alt="Image"/>
+                <img src={d.thumbnail} alt={d.text}/>
               </figure>
             </div>
             <div className="media-content">
