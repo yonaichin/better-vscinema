@@ -23,11 +23,13 @@ class App extends Component {
           this.props.theater.isFetching && <LoadingSpinner />
         }
         <Hero />
+        {/*
         <section>
           <h4>Current Page is : {this.props.view}</h4>
           <a className="button is-primary is-outlined" onClick={() => { this.props.setView('INDEX')}}>Index</a>
           <a className="button is-info is-outlined" onClick={() => { this.props.setView('TICKET')}}>Ticket</a>
         </section>
+        */}
         <TheaterList dataset={this.props.theater.data} />
       </div>
     )
